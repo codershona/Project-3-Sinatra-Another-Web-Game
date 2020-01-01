@@ -37,3 +37,27 @@ get '/settings' do
   end
   erb :settings, :locals => {:msg => msg}
 end
+
+get '/game' do
+  if session[:set]
+    if params.has_key?(:letter)
+      char = ""
+      if session[:language] == "en"
+        char = ("A".ord + params["letter"].to_i - 1).chr
+      else
+        char = ("А".ord + params["letter"].to_i - 1).chr(Encoding::UTF_8)
+      end
+      guess(char)
+      #if session[:attempts_left] == 0 or session[:dashes].index("_") == nil
+        #redirect to "/gameover"
+    #end
+  end
+    erb :game, :locals => {}
+  else
+    redirect "/"
+  end
+end
+
+get '/gameover' do
+  erb :gameover, :locals => {}
+end
