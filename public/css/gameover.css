@@ -7,3 +7,10 @@
   height: 338px;
   background-image: url("../images/alive.png");
 }
+
+/* its possible to win the game now */
+#play_again
+{
+  font-size: 45pt;
+  width: 400px;
+}

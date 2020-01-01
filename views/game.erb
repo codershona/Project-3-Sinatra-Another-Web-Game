@@ -1,1 +1,19 @@
-game.erb
+<html>
+  <head>
+    <link rel="icon" href="../images/icon.png" type="image/icon">
+    <link rel="stylesheet" type="text/css" href="../css/shared.css">
+    <link rel="stylesheet" type="text/css" href="../css/game.css">
+
+    <title>Hangman</title>
+  </head>
+  <body>
+    <div id="game">
+      <div id="progress" class="<%= "hangman#{9 - session[:attempts_left]}" %>"></div>
+      <div class="word"> <%= session[:dashes] %> </div>
+    </div>
+    <div id="keyboard"> </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../scripts/game.js"></script>
+  <script> init("<%= session[:language] %>"); </script>
+</html>

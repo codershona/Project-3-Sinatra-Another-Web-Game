@@ -1,0 +1,10 @@
+<div id="progress" class="<%= "hangman#{9 - session[:attempts_left]}" %>"></div>
+<% dashes = "" %>
+<% i = 1 %>
+<% l = session[:word].length - 1 %>
+<% until i > l do %>
+  <% dashes += "_" %>
+  <% i += 1%>
+<% end %>
+<div class="word"> <%= dashes %> </div>
+<div id="keyboard"></div>

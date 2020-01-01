@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="icon" href="../images/icon.png" type="image/icon">
+    <link rel="stylesheet" type="text/css" href="../css/shared.css">
+    <link rel="stylesheet" type="text/css" href="../css/settings.css">
+    <title>Hangman</title>
+  </head>
+  <body>
+    <div class="swinging"></div>
+    <div class="big_text">HANGMAN</div>
+    <div class="dashes">_ _ _ _ _ _ _</div>
+    <div class = "smalltext" id="settings_container">
+      <hr>
+
+      <form method="get" action="/settings">
+
+        <div class="language_select" id="lan_form">
+          <select name='language'>
+              <option value="none"> Select language </option>
+              <option value="en"> English </option>
+              <option value="ru"> Russian </option>
+          </select>
+        </div>
+        <p id="language_alert"><%= msg %></p>
+        <div class="length_range" id="len_form">
+          <input type="range" min="4" max="10" value="5" class="slider" id="myRange" name='length'>
+          <p id="word_length_label">Word length: <span id="value"></span></p>
+        </div>
+        <hr>
+        <input class="button big_button" id="start" type="submit" value="START" ></div>
+      </form>
+    </div>
+    <script src="scripts/settings.js"></script>
+  </body>
+</html>

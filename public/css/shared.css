@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+/* fixing for firefox */
+
+body
+{
+      /*background: linear-gradient(135deg, #8363a1 0%, #74a8c3 100%);*/
+  background: linear-gradient(235deg, #56b09d, #2e458e);
+  background-size: 200% 200%;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+  padding-top: 0px;
+}
+
+::-moz-focus-inner {border:0;}
+
+.swinging
+{
+  margin-left: auto;
+  margin-right: auto;
+  /*margin-top: 30px;*/
+  width: 300px;
+  height: 338px;
+  background-image: url("../images/hangman_swinging.png");
+  animation: playSwingX .55s steps(5) infinite,
+              playSwingY 3.3s steps(6) infinite;
+}
+
+@keyframes playSwingX
+{
+  from {background-position-x: 0px;}
+  to {background-position-x: -1500px;}
+}
+
+@keyframes playSwingY
+{
+  from {background-position-y: 0px;}
+  to {background-position-y: -2028px;}
+}
+
+.button
+{
+  background-color: rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.23);
+  color: rgba(255, 255, 255, 0.83);
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  transition: .3s;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:hover:enabled
+{
+  background-color: rgba(255, 255, 255, 0.23);
+  text-shadow: 0px 0px 10px rgba(255,255,255,0.7);
+}
+
+.button:active:enabled
+{
+  transition: .1s;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(255,255,255,0.5);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(255,255,255,0.5);
+  box-shadow: 0px 0px 10px 1px rgba(255,255,255,0.5);
+}
+
+.big_button
+{
+  width: 250px;
+  height: 95px;
+  color: rgba(255, 255, 255, 0.83);
+  font-size: 55pt;
+  line-height: 95px;
+}
+
+.align_center
+{
+  text-align: center;
+}
+
+.big_text
+{
+  font-size: 60pt;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  text-align: center;
+  margin-right: 20px;
+  margin-top: 70px;
+  line-height: 37px;
+}
+
+.smalltext
+{
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
+
+.dashes
+{
+  font-size: 58pt;
+  color: white;
+  text-align: center;
+  margin-right: 17px;
+  line-height: 5px;
+}

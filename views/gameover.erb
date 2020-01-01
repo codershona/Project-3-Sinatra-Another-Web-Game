@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <link rel="icon" href="../images/icon.png" type="image/icon">
+    <link rel="stylesheet" type="text/css" href="../css/shared.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/gameover.css">
+    <title>Hangman</title>
+  </head>
+  <body>
+    <% text = "You win!" %>
+    <% classname = "alive" %>
+    <% if session[:attempts_left] == 0 %>
+      <% text = "You lose!" %>
+      <% classname = "swinging" %>
+    <% end %>
+    <div class="<%= classname %>"></div>
+    <div class="big_text"><%= text %></div>
+    <div id="empty_space"></div>
+    <div class="smalltext align_center">The word was <%=session[:word]%></div>
+    <div id="empty_space"></div>
+    <form class="align_center" id="play" method="get" action="/settings">
+      <input id="play_again" class="button big_button" type="submit" value="PLAY AGAIN"></div>
+    </form>
+  </body>
+</html>
