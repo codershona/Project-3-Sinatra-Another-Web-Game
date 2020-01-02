@@ -6,7 +6,7 @@
 body
 {
       /*background: linear-gradient(135deg, #8363a1 0%, #74a8c3 100%);*/
-  background: linear-gradient(235deg, #56b09d, #2e458e);
+  background: linear-gradient(235deg, #eaa625, #2e8e58);
   background-size: 200% 200%;
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -77,8 +77,8 @@ body
 {
   width: 250px;
   height: 95px;
-  color: rgba(255, 255, 255, 0.83);
-  font-size: 55pt;
+ color: rgba(17, 15, 15, 0.83);
+  font-size: 65pt;
   line-height: 95px;
 }
 
@@ -89,13 +89,13 @@ body
 
 .big_text
 {
-  font-size: 60pt;
-  font-family: 'Quicksand', sans-serif;
-  color: white;
-  text-align: center;
-  margin-right: 20px;
-  margin-top: 70px;
-  line-height: 37px;
+ font-size: 79pt;
+font-family: 'Quicksand', sans-serif;
+color: blue;
+text-align: center;
+margin-right: 20px;
+margin-top: 70px;
+line-height: 37px;
 }
 
 .smalltext
@@ -108,7 +108,7 @@ body
 .dashes
 {
   font-size: 58pt;
-  color: white;
+  color: w#1c1212;
   text-align: center;
   margin-right: 17px;
   line-height: 5px;
