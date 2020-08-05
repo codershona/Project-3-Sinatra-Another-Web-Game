@@ -16,9 +16,6 @@ Project 3: Sinatra Another Web-Game
  3.  Deploy to Heroku using the instructions at the top of this page.
 
 
-
-## Developer: Falguni Islam(Software Developer)
-
 ## Heroku Open :
 
 **[Sinatra Project](https://tranquil-badlands-51074.herokuapp.com/)**
